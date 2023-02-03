@@ -7,7 +7,7 @@ from streamlit_autorefresh import st_autorefresh
 import datetime 
 from datetime import date
 from dateutil.relativedelta import relativedelta
-from .util.navbutton import *
+import util.navbutton 
 
 # update every 5 mins
 st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
@@ -24,4 +24,4 @@ user_AT = st.text_input("What is your oura ring access token? \n Log in at https
 st.session_state['access_token'] = user_AT
 
 if st.button("To your Dashboard!"):
-    nav_page("Experiment")
+    util.navbutton.nav_page("Experiment")
