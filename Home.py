@@ -7,7 +7,7 @@ from streamlit_autorefresh import st_autorefresh
 import datetime 
 from datetime import date
 from dateutil.relativedelta import relativedelta
-from navbutton import *
+from navbutton.py import *
 
 # update every 5 mins
 st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
