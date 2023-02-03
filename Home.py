@@ -14,13 +14,6 @@ elif (spec := importlib.util.find_spec(name)) is not None:
 else:
     print(f"can't find the {name!r} module")
 
-'''
-import subprocess
-import sys
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
-'oura'])
-'''
-
 import streamlit as st
 from oura import OuraClient
 import pandas as pd
