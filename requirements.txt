@@ -40,6 +40,7 @@ nbformat==5.7.3
 nest-asyncio==1.5.6
 numpy==1.24.1
 oauthlib==3.2.2
+oura==1.2.4
 packaging==23.0
 pandas==1.5.3
 parso==0.8.3
