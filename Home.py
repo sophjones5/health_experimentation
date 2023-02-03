@@ -9,7 +9,7 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from util import navbutton
 
-st.set_page_config(page_title='Oura Experiments', page_icon='💤', layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title='Oura Experiments', page_icon='favicon.png', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 # update every 5 mins
 st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
