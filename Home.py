@@ -9,6 +9,8 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from util import navbutton
 
+st.set_page_config(page_title='Oura Experiments', page_icon='💤', layout="centered", initial_sidebar_state="auto", menu_items=None)
+
 # update every 5 mins
 st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
 
@@ -18,7 +20,7 @@ st.write('We just need the following information to make your own personalised d
 st.write("")
 experiment = st.text_input("What factor/experiment do you wish to observe the effect of?", 'a carnivore diet')
 st.session_state['experiment'] = experiment
-start_date = st.text_input("What date did you start your experiment?", date.today().strftime("%d-%m-%Y"))
+start_date = st.text_input("What date did you start your experiment?", "25-01-2023")
 st.session_state['start_date'] = datetime.datetime.strptime(start_date, "%d-%m-%Y").date()
 user_AT = st.text_input("What is your oura ring access token? \n Log in at https://cloud.ouraring.com/personal-access-tokens to create a new one and copy it.", type="password")
 st.session_state['access_token'] = user_AT
