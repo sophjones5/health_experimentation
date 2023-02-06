@@ -14,9 +14,9 @@ st.set_page_config(page_title='Oura Experiments', page_icon='logo.png', layout="
 # update every 5 mins
 st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
 
-st.title('Welcome to your Oura Ring Experiment Dashboard!')
+st.markdown("<h1 style='text-align: center; color: white; font-size:150px;'>Welcome to your Oura Ring Experiment Dashboard!</h1>", unsafe_allow_html=True)
 st.write("")
-st.write('We just need the following information to make your own personalised dashboard :smile:')
+st.markdown("<h2 style='text-align: center; color: white; font-size:150px;'>We just need the following information to make your own personalised dashboard</h2>", unsafe_allow_html=True)
 st.write("")
 experiment = st.text_input("What factor/experiment do you wish to observe the effect of?", 'a carnivore diet')
 st.session_state['experiment'] = experiment
