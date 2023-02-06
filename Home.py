@@ -14,7 +14,7 @@ st.set_page_config(page_title='Oura Experiments', page_icon='logo.png', layout="
 # update every 5 mins
 st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
 
-st.markdown("<h1 style='text-align: center; color: white; font-size:80px;'>Welcome to your Oura Ring Experiment Dashboard!</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white; font-size:65px;'>Welcome to your Oura Ring Experiment Dashboard!</h1>", unsafe_allow_html=True)
 st.write("")
 st.markdown("<h2 style='text-align: center; color: white; font-size:50px;'>We just need the following information to make your own personalised dashboard</h2>", unsafe_allow_html=True)
 st.write("")
