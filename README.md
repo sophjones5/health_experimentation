@@ -13,4 +13,4 @@ Below shows some screenshots of the website and resulting graphs based on a carn
 
 ![first dashboard example](readmeexample1.png)
 
-![second dashboard example](readmeexample2.png)
+![second dashboard example](readmexample2.png)
