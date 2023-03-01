@@ -11,6 +11,6 @@ Navigate to the dashboard via the side panel or button!
 ## Example
 Below shows some screenshots of the website and resulting graphs based on a carnivore diet experiment I am running.
 
-![first dashboard example](readmeexample1.png)
+![first dashboard example](util/readmeexample1.png)
 
-![second dashboard example](readmexample2.png)
+![second dashboard example](util/readmexample2.png)

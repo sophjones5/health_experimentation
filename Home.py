@@ -1,18 +1,6 @@
-import importlib.util
-import sys
 import streamlit as st
-from oura import OuraClient
-import pandas as pd
-from streamlit_autorefresh import st_autorefresh
 import datetime 
-from datetime import date
-from dateutil.relativedelta import relativedelta
 from util import navbutton
-
-st.set_page_config(page_title='Oura Experiments', page_icon='logo.png', layout="centered", initial_sidebar_state="auto", menu_items=None)
-
-# update every 5 mins
-st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
 
 def text_field(label, columns=None, **input_params):
     c1, c2 = st.columns(columns or [1, 4])
