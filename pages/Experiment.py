@@ -1,8 +1,6 @@
 import streamlit as st
 from oura import OuraClient
 import pandas as pd
-from streamlit_autorefresh import st_autorefresh
-import datetime
 from dateutil.relativedelta import relativedelta
 
 st.markdown(f"<h1 style='text-align: center; color: white; font-size:55px;'>Effect of {st.session_state.experiment} on your health!</h1>", unsafe_allow_html=True)
@@ -10,6 +8,7 @@ st.markdown(f"<h1 style='text-align: center; color: white; font-size:55px;'>Effe
 #scrpping required data from api
 client = OuraClient(personal_access_token=st.session_state.access_token)
 user_info = client.user_info()
+
 startdate = st.session_state.start_date
 experimentsleepdf = pd.DataFrame(client.sleep_summary(start = str(startdate))['sleep'])
 preexperimentsleepdf = pd.DataFrame(client.sleep_summary(start = str(startdate- relativedelta(years=2)), end = str(startdate))['sleep'])
