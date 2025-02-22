@@ -1,7 +1,7 @@
-# Run Experiments on your health using an Oura ring
+# Run metric driven Experiments on your health
 
 ## Requirements
-An oura ring and the desire to make a lifestyle change and observe the output effects.
+An specified metric either manually entered or from an integration eg. oura ring or withings and the desire to make a lifestyle change and observe the output effects.
 
 ## How to use?
 Follow the link to https://sophjones5-oura.streamlit.app/ and enter the required info on the landing page (Your oura access token can be retrieved via the link provided on the website).
